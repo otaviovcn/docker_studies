@@ -12,7 +12,7 @@ body {
   text-align: center;
 }
 
-div {
+/* div {
   background-color: #ffffff;
   padding: 40px;
   border-radius: 12px;
@@ -20,7 +20,7 @@ div {
   max-width: 600px;
   width: 90%;
   border-top: 8px solid #1D63ED;
-}
+} */
 
 h1 {
   color: #1D63ED; 
