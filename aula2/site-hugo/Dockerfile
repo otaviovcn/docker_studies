@@ -20,5 +20,5 @@ COPY --from=primeiro-estagio /site/public/ /usr/share/nginx/html
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
-# docker rm -f meu-container
+# docker build -t=site-hugo .
 # docker run -p=8080:80 --rm -d --name=meu-container-hugo site-hugo
