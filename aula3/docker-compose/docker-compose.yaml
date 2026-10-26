@@ -1,0 +1,13 @@
+# como se estivéssemos executando o comando docker build para o back-end e o front-end
+# logo depois, três vezes o comando docker run, uma vez para cada serviço
+
+version: "3"
+services:
+# build: especifica a pasta contendo um arquivo Dockerfile a partir do qual o Compose vai executar o comando docker build automaticamente.
+  frontend:
+    build: frontend/ # Especificamos o contexto, ou seja, a pasta onde está o Dockerfile.
+  backend:
+    build: backend/
+  database:
+  # especifica uma imagem Docker pronta, seja local ou a ser baixada no Docker Hub
+    image: betrybe/docker-compose-example-database:v1
